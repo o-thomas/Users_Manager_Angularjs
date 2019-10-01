@@ -33,30 +33,22 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">angularjs</a>
+            <a class="navbar-brand" href="#/">User manager</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
-    <div ng-view=""></div>
+        <h2 class = "text-center">Welcome to user manager app !</h2>
+    <div ng-view="" ></div>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
+    
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -69,7 +61,13 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
 
+<!-- Angular Material Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -83,7 +81,7 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->
+    <!-- endbuil -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
@@ -91,6 +89,7 @@
         <script src="scripts/controllers/users.js"></script>
         <script src="scripts/services/serviceusers.js"></script>
         <script src="scripts/services/serviceajax.js"></script>
+        <script src="scripts/controllers/userform.js"></script>
         <!-- endbuild -->
 </body>
 </html>

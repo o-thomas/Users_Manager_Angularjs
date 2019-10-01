@@ -30,6 +30,11 @@ angular
         controller: 'UsersCtrl',
         controllerAs: 'users'
       })
+      .when('/userForm', {
+        templateUrl: 'views/userform.html',
+        controller: 'UserformCtrl',
+        controllerAs: 'userForm'
+      })
       .otherwise({
         redirectTo: '/'
       });
